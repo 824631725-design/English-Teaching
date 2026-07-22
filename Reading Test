@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI and Transportation 阅读选择题</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft Yahei", Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            padding: 30px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+        .passage {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            font-size: 15px;
+            color: #333;
+        }
+        .question {
+            margin: 25px 0;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .q-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #222;
+        }
+        .option {
+            display: block;
+            margin: 8px 0;
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .option:hover {
+            background-color: #eef5ff;
+        }
+        .correct {
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+        }
+        .wrong {
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+            color: #721c24;
+        }
+        .answer-tip {
+            margin-top: 12px;
+            padding: 12px;
+            border-radius: 4px;
+            display: none;
+        }
+        .great {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        .error-tip {
+            background: #ffebee;
+            color: #c62828;
+        }
+        .explain {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Artificial Intelligence and Transportation 阅读理解</h1>
+
+        <!-- 阅读原文 -->
+        <div class="passage">
+            <p>1 Transportation is likely to be one of the first domains in which the general public will be asked to trust the reliability and safety of an AI system for a critical task. Once the physical hardware is made sufficiently safe and robust, its introduction to daily life may happen so suddenly as to surprise the public, which will require time to adjust. As cars will become better drivers than people, city-dwellers will own fewer cars, live further from work, and spend time differently, leading to an entirely new urban organization. Further, in the typical North American city in 2030, changes won't be limited to cars and trucks, but are likely to include flying vehicles and personal robots, and will raise social, ethical and policy issues.</p>
+            <br>
+            <p>2 A few key technologies have already catalyzed the widespread adoption of AI in transportation. Compared to 2000, the scale and diversity of data about personal and population-level transportation available today — enabled by the adoption of smartphones and decreased costs, and improved accuracy for a variety of sensors — is astounding. Without the availability of this data and connectivity, applications such as real-time sensing and prediction of traffic, route calculations, peer-to-peer ridesharing, and self-driving cars would not be possible.</p>
+            <br>
+            <p>3 Since the 1930s, science fiction writers dreamed of a future with self-driving cars, and building them has been a challenge for the AI community since the 1960s. By the 2000s, the dream of autonomous vehicles became a reality in the sea and sky, and even on Mars, but self-driving cars existed only as research prototypes in labs. Driving in a city was considered to be a problem too complex for automation due to factors like pedestrians, heavy traffic, and the many unexpected events that can happen outside of the car's control. Although the technological components required to make such autonomous driving possible were available in 2000 — and indeed some autonomous car prototypes existed — few predicted that mainstream companies would be developing and deploying autonomous cars by 2015. During the first Defense Advanced Research Projects Agency (DARPA) "grand challenge" on autonomous driving in 2004, research teams failed to complete the challenge in a limited desert setting.</p>
+            <br>
+            <p>4 But in eight short years, from 2004 to 2012, speedy and surprising progress occurred in both academia and industry. Advances in sensing technology and machine learning for perception tasks have sped progress and, as a result, Google's autonomous vehicles and Tesla's semi-autonomous cars are driving on city streets today. Google's self-driving cars, which have logged more than 1,500,000 miles (300,000 miles without an accident), are completely autonomous — no human input needed. Tesla has widely released self-driving capability to existing cars with a software update. Their cars are semi-autonomous, with human drivers expected to stay engaged and take over if they detect a potential problem. It is not yet clear whether this semi-autonomous approach is sustainable, since as people become more confident in the cars' capabilities, they are likely to pay less attention to the road, and become less reliable when they are most needed. The first traffic fatality involving an autonomous car, which occurred in June of 2016, brought this question into sharper focus.</p>
+            <br>
+            <p>5 In the near future, sensing algorithms will achieve super-human performance for the capabilities required for driving. Automated perception, including vision, is already near or at human-level performance for well-defined tasks such as recognition and tracking. Advances in perception will be followed by algorithmic improvements in higher-level reasoning capabilities, such as planning. A recent report predicts that self-driving cars will be widely adopted by 2020. And the adoption of self-driving capabilities won't be limited to personal transportation. We will see self-driving and remotely controlled delivery vehicles, flying vehicles, and trucks. Peer-to-peer transportation services such as ridesharing are also likely to utilize self-driving vehicles. Beyond self-driving cars, advances in robotics will facilitate the creation and adoption of other types of autonomous vehicles, including robots and drones.</p>
+            <br>
+            <p>6 It is not yet clear how much better self-driving cars need to become to encourage broad acceptance. The collaboration required in semi-self-driving cars and its implications for the cognitive load of human drivers are not well understood. But if future self-driving cars are adopted at the predicted speed, and they exceed human-level performance in driving, other significant societal changes will follow. Self-driving cars will eliminate one of the biggest causes of accidental death and injury in the United States and lengthen people's life expectancy. On average, a commuter in the US spends twenty-five minutes driving each way. With self-driving car technology, people will have more time to work or entertain themselves during their commutes. And the increased comfort and decreased cognitive load with self-driving cars and shared transportation may affect where people choose to live. The reduced need for parking may affect the way cities and public spaces are designed. Self-driving cars may also serve to increase the freedom and mobility of different subgroups of the population, including youth, the elderly and the disabled.</p>
+            <br>
+            <p>7 Self-driving cars and peer-to-peer transportation services may eliminate the need to own a vehicle. The effect on total car use is hard to predict. Trips of empty vehicles and people's increased willingness to travel may lead to more total miles driven.</p>
+            <br>
+            <p>8 Alternatively, shared autonomous vehicles — people using cars as a service rather than owning their own — may reduce total miles, especially if combined with well-constructed incentives, such as tolls or discounts, to spread out travel demand, share trips, and reduce congestion. The availability of shared transportation may displace the need for public transportation — or public transportation may change form towards personal rapid transit, already available in four cities, which uses small capacity vehicles to transport people on demand and point-to-point between many stations.</p>
+            <br>
+            <p>9 As autonomous vehicles become more widespread, questions will arise over their security, including how to ensure that technologies are safe and properly tested under different road conditions prior to their release. Autonomous vehicles and the connected transportation infrastructure will create a new venue for hackers to exploit vulnerabilities to attack. Ethical questions are also involved in programming cars to act in situations in which human injury or death is inevitable, especially when there are split-second choices to be made about whom to put at risk. The legal systems in most states in the US do not have rules covering self-driving cars. As of 2016, four states in the US (Nevada, Florida, California, and Michigan), Ontario in Canada, the United Kingdom, France, and Switzerland have passed rules for the testing of self-driving cars on public roads. Even these laws do not address issues about responsibility and assignment of blame for an accident for self-driving and semi-self-driving cars.</p>
+        </div>
+
+        <!-- 题目1 -->
+        <div class="question" id="q1">
+            <div class="q-title">1. According to Paragraph 1, what will happen when AI cars drive better than humans?</div>
+            <div class="option" data-ans="A">A. People will own fewer private cars.</div>
+            <div class="option" data-ans="B">B. Flying vehicles will disappear gradually.</div>
+            <div class="option" data-ans="C">C. People will work closer to their homes.</div>
+            <div class="option" data-ans="D">D. Social ethical problems will be solved.</div>
+            <div class="answer-tip">
+                <div class="result"></div>
+                <div class="explain"></div>
+            </div>
+        </div>
+
+        <!-- 题目2 -->
+        <div class="question" id="q2">
+            <div class="q-title">2. What makes AI applications in transportation possible according to Paragraph 2?</div>
+            <div class="option" data-ans="A">A. Lower cost of living</div>
+            <div class="option" data-ans="B">B. Rich transportation data and connectivity</div>
+            <div class="option" data-ans="C">C. Popularity of flying vehicles</div>
+            <div class="option" data-ans="D">D. Changes in urban organization</div>
+            <div class="answer-tip">
+                <div class="result"></div>
+                <div class="explain"></div>
+            </div>
+        </div>
+
+        <!-- 题目3 -->
+        <div class="question" id="q3">
+            <div class="q-title">3. Why were self-driving cars only lab prototypes in the 2000s?</div>
+            <div class="option" data-ans="A">A. No related technology existed at that time</div>
+            <div class="option" data-ans="B">B. Companies showed no interest in them</div>
+            <div class="option" data-ans="C">C. Urban driving was too complex for automation</div>
+            <div class="option" data-ans="D">D. DARPA challenges stopped related research</div>
+            <div class="answer-tip">
+                <div class="result"></div>
+                <div class="explain"></div>
+            </div>
+        </div>
+
+        <!-- 题目4 -->
+        <div class="question" id="q4">
+            <div class="q-title">4. What is the potential risk of Tesla's semi-autonomous cars?</div>
+            <div class="option" data-ans="A">A. They cannot run on city streets</div>
+            <div class="option" data-ans="B">B. Drivers may lose concentration on roads</div>
+            <div class="option" data-ans="C">C. They need frequent software updates</div>
+            <div class="option" data-ans="D">D. They have more accidents than Google's cars</div>
+            <div class="answer-tip">
+                <div class="result"></div>
+                <div class="explain"></div>
+            </div>
+        </div>
+
+        <!-- 题目5 -->
+        <div class="question" id="q5">
+            <div class="q-title">5. Which problem do most US states fail to solve about self-driving cars?</div>
+            <div class="option" data-ans="A">A. Accident responsibility division</div>
+            <div class="option" data-ans="B">B. Public road testing rules</div>
+            <div class="option" data-ans="C">C. Hacking prevention technology</div>
+            <div class="option" data-ans="D">D. Ethical choice in dangerous situations</div>
+            <div class="answer-tip">
+                <div class="result"></div>
+                <div class="explain"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 每道题答案 + 解析
+        const questionData = [
+            {
+                rightAns: "A",
+                explain: "定位第一段：As cars will become better drivers than people, city-dwellers will own fewer cars... 可知人们会拥有更少私家车。B、C、D 均与原文不符。"
+            },
+            {
+                rightAns: "B",
+                explain: "定位第二段最后一句：Without the availability of this data and connectivity... self-driving cars would not be possible. 充足的交通数据与网络连接是AI交通应用的基础。"
+            },
+            {
+                rightAns: "C",
+                explain: "定位第三段：Driving in a city was considered to be a problem too complex for automation... 城市路况复杂，当时无法实现自动化驾驶。"
+            },
+            {
+                rightAns: "B",
+                explain: "定位第四段：as people become more confident in the cars' capabilities, they are likely to pay less attention to the road. 司机会放松警惕、分心，这是半自动驾驶的隐患。"
+            },
+            {
+                rightAns: "A",
+                explain: "定位第九段最后一句：Even these laws do not address issues about responsibility and assignment of blame for an accident. 美国大部分地区尚未解决自动驾驶车辆的事故责任划分问题。"
+            }
+        ];
+
+        // 给每个选项绑定点击事件
+        const questions = document.querySelectorAll(".question");
+        questions.forEach((q, idx) => {
+            const options = q.querySelectorAll(".option");
+            const tipBox = q.querySelector(".answer-tip");
+            const resText = q.querySelector(".result");
+            const expText = q.querySelector(".explain");
+            const data = questionData[idx];
+
+            options.forEach(opt => {
+                opt.addEventListener("click", function(){
+                    // 重置样式
+                    options.forEach(o => {
+                        o.classList.remove("correct", "wrong");
+                    });
+                    tipBox.style.display = "block";
+
+                    const userAns = this.dataset.ans;
+                    if(userAns === data.rightAns){
+                        this.classList.add("correct");
+                        resText.className = "result great";
+                        resText.innerText = "Great!";
+                    } else {
+                        this.classList.add("wrong");
+                        // 标亮正确答案
+                        options.forEach(o => {
+                            if(o.dataset.ans === data.rightAns){
+                                o.classList.add("correct");
+                            }
+                        });
+                        resText.className = "result error-tip";
+                        resText.innerText = `Wrong! The correct answer is ${data.rightAns}.`;
+                    }
+                    expText.innerText = data.explain;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
